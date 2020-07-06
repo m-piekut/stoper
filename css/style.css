@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #333;
+}
+
+.greentest .wrapper {
+  border: 1px solid green;
+  -webkit-box-shadow: 0 0 15px green;
+          box-shadow: 0 0 15px green;
+}
+
+.orangetest .wrapper {
+  border: 1px solid orange;
+  -webkit-box-shadow: 0 0 15px orange;
+          box-shadow: 0 0 15px orange;
+}
+
+.wrapper {
+  position: relative;
+  top: 200px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid royalblue;
+  -webkit-box-shadow: 0 0 15px royalblue;
+          box-shadow: 0 0 15px royalblue;
+  padding: 10px;
+  background-image: radial-gradient(circle, #585757 1%, #181818 70%);
+}
+
+.greentest .tools {
+  color: green;
+}
+
+.orangetest .tools {
+  color: orange;
+}
+
+.tools {
+  width: 100%;
+  padding-left: 75%;
+  color: royalblue;
+}
+
+.tools p {
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.tools p input {
+  width: 20px;
+}
+
+.tools .colors {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  right: 0;
+  background-color: #2b2a2a;
+  height: 100%;
+  width: 20%;
+  visibility: hidden;
+}
+
+.tools .colors p {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.tools .colors .blue {
+  background: royalblue;
+  -webkit-box-shadow: 0 0 15px 5px royalblue;
+          box-shadow: 0 0 15px 5px royalblue;
+}
+
+.tools .colors .green {
+  background: green;
+  -webkit-box-shadow: 0 0 15px 5px green;
+          box-shadow: 0 0 15px 5px green;
+}
+
+.tools .colors .orange {
+  background: orange;
+  -webkit-box-shadow: 0 0 15px 5px orange;
+          box-shadow: 0 0 15px 5px orange;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.greentest .stopwatch {
+  color: green;
+  text-shadow: 5px 5px 5px green;
+}
+
+.orangetest .stopwatch {
+  color: orange;
+  text-shadow: 5px 5px 5px orange;
+}
+
+.stopwatch {
+  font-size: 50px;
+  color: royalblue;
+  letter-spacing: 3px;
+  text-shadow: 5px 5px 5px royalblue;
+}
+
+.time {
+  font-size: 20px;
+  margin-bottom: 10px;
+  height: 20px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.greentest button {
+  -webkit-box-shadow: 0 0 10px green;
+          box-shadow: 0 0 10px green;
+  border: 1px solid green;
+}
+
+.orangetest button {
+  -webkit-box-shadow: 0 0 10px orange;
+          box-shadow: 0 0 10px orange;
+  border: 1px solid orange;
+}
+
+button {
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid royalblue;
+  color: white;
+  cursor: pointer;
+  margin: 10px 5px;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  -webkit-box-shadow: 0 0 10px royalblue;
+          box-shadow: 0 0 10px royalblue;
+}
+
+.greentest button:hover {
+  color: green;
+}
+
+.orangetest button:hover {
+  color: orange;
+}
+
+button:hover {
+  color: royalblue;
+}
+
+.start i {
+  height: 20px;
+  width: 20px;
+}
+
+.history {
+  width: 100%;
+}
+
+.modal-shadow {
+  position: absolute;
+  width: 100vw;
+  height: 100vh -20px;
+  display: none;
+}
+
+.greentest .modal i {
+  color: green;
+}
+
+.orangetest .modal i {
+  color: orange;
+}
+
+.modal {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 10px;
+  width: 380px;
+  border: 1px solid;
+  background-color: #ffffff;
+  border-radius: 10%;
+}
+
+.modal p {
+  padding: 5px;
+  color: black;
+}
+
+.modal p i {
+  color: royalblue;
+}
+
+.greentest .close {
+  color: green;
+}
+
+.orangetest .close {
+  color: orange;
+}
+
+.close {
+  margin: 10px 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: royalblue;
+}
+
+.show-colors {
+  right: 0;
+  visibility: visible;
+}
+
+.disable {
+  display: none;
+}
+
+.time-list {
+  width: 90%;
+}
+
+.greentest .time-list li {
+  border-bottom: green 1px solid;
+}
+
+.orangetest .time-list li {
+  border-bottom: orange 1px solid;
+}
+
+.time-list li {
+  font-size: 20px;
+  color: white;
+  margin: 5px;
+  padding-left: 43%;
+  border-bottom: royalblue 1px solid;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,183 @@
+$colors: (top: gold, left: tomato, right: pink)
+
+$blue-color: royalblue    
+$orange-color: orange    
+$green-color: green
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+
+body
+    display: flex
+    align-items: center
+    flex-direction: column
+    min-height: 100vh
+    font-family: 'Montserrat', sans-serif
+    background-color: #333
+.greentest .wrapper
+    border: 1px solid $green-color
+    box-shadow: 0 0 15px $green-color
+.orangetest .wrapper
+    border: 1px solid $orange-color
+    box-shadow: 0 0 15px $orange-color
+.wrapper
+    position: relative
+    top: 200px
+    width: 400px
+    display: flex
+    flex-direction: column
+    align-items: center
+    border: 1px solid $blue-color
+    box-shadow: 0 0 15px $blue-color
+    padding: 10px
+    background-image: radial-gradient(circle, #585757 1%, #181818 70%)
+.greentest .tools
+    color: $green-color
+.orangetest .tools
+    color: $orange-color
+.tools
+    width: 100%
+    padding-left: 75%
+    color: $blue-color
+    p
+        display: inline-block
+        margin: 5px
+        cursor: pointer
+        input
+            width: 20px
+    .colors
+        position: absolute
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        top: 0
+        right: 0
+        background-color: #2b2a2a
+        height: 100%
+        width: 20%
+        visibility: hidden
+        p
+            width: 40px
+            height: 40px
+            border-radius: 50%
+        .blue
+            background: $blue-color
+            box-shadow: 0 0 15px 5px $blue-color
+        .green
+            background: $green-color
+            box-shadow: 0 0 15px 5px $green-color
+        .orange
+            background: $orange-color
+            box-shadow: 0 0 15px 5px $orange-color
+h1
+    color: white
+    font-size: 40px
+    letter-spacing: 3px
+    margin-bottom: 10px
+.greentest .stopwatch
+    color: $green-color
+    text-shadow: 5px 5px 5px $green-color
+.orangetest .stopwatch
+    color: $orange-color
+    text-shadow: 5px 5px 5px $orange-color
+.stopwatch
+    font-size: 50px
+    color: $blue-color
+    letter-spacing: 3px
+    text-shadow: 5px 5px 5px $blue-color
+
+.time
+    font-size: 20px
+    margin-bottom: 10px
+    height: 20px
+
+
+.buttons
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+.greentest button
+    box-shadow: 0 0 10px $green-color
+    border: 1px solid $green-color
+.orangetest button
+    box-shadow: 0 0 10px $orange-color
+    border: 1px solid $orange-color
+
+button
+    font-size: 20px
+    padding: 5px 10px
+    background-color: transparent
+    border: 1px solid $blue-color
+    color: white
+    cursor: pointer
+    margin: 10px 5px
+    transition: color .5s
+    box-shadow: 0 0 10px $blue-color
+.greentest button:hover    
+    color: $green-color
+.orangetest button:hover    
+    color: $orange-color
+button:hover
+    color: $blue-color
+.start i
+    height: 20px
+    width: 20px
+.history
+    width: 100%
+.modal-shadow
+    position: absolute
+    width: 100vw
+    height: 100vh -20px
+    display: none
+.greentest .modal i
+    color: $green-color
+.orangetest .modal i
+    color: $orange-color
+.modal
+    position: absolute
+    top: 10px
+    left: 50%
+    transform: translateX(-50%)
+    padding: 10px
+    width: 380px
+    border: 1px solid 
+    background-color: #ffffff
+    border-radius: 10%
+    p
+        padding: 5px
+        color: black
+        i
+            color: $blue-color
+.greentest .close        
+    color: $green-color
+.orangetest .close        
+    color: $orange-color
+.close
+    margin: 10px 50%
+    transform: translateX(-50%)
+    color: $blue-color
+
+.show-colors
+    right: 0
+    visibility: visible
+.disable
+    display: none
+.time-list
+    width: 90%
+.greentest .time-list li
+    border-bottom: $green-color 1px solid
+.orangetest .time-list li
+    border-bottom: $orange-color 1px solid
+
+.time-list li
+    font-size: 20px
+    color: white
+    margin: 5px
+    padding-left: 43% 
+    border-bottom: $blue-color 1px solid
+
+.hide
+    display: none
